@@ -19,7 +19,6 @@ export default function Navigation() {
                 animate="enter"
                 exit="exit"
               >
-                {/* The anchor tag is correctly placed within the motion.div for navigation */}
                 <a href={href} className={styles.link}>
                   {title}
                 </a>

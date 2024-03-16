@@ -7,6 +7,7 @@ import Profile from "@/components/Pages/Profile";
 import Section1 from "@/components/Pages/Section1";
 import Header from "@/components/Header/Header";
 import Section2 from "@/components/Pages/Section2";
+import Section3 from "@/components/Pages/Section3";
 
 export default function Home() {
   useEffect(() => {
@@ -28,6 +29,7 @@ export default function Home() {
         <ZoomParallax />
         <Section1 />
         <Section2 />
+        <Section3 />
       </div>
     </main>
   );

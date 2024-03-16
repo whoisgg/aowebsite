@@ -3,7 +3,7 @@ import styles from "../../styles/section.module.scss";
 
 const Section1 = () => {
   return (
-    <div className={styles.profile}>
+    <div className={styles.profile} id="about">
       <div>image</div>
 
       <div className="grid grid-cols-2 gap-4">
