@@ -3,7 +3,7 @@ import styles from "../../styles/section.module.scss";
 
 const Section3 = () => {
   return (
-    <div className={styles.profile2} id="services">
+    <div className={`${styles.profile2}`} id="services">
       Servicios
     </div>
   );
