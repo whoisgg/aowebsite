@@ -30,8 +30,8 @@ export default function Home() {
         <ZoomParallax />
         <Section1 />
         <Section2 />
-        <Section3 />
         <ScrollSection />
+        <Section3 />
         <Section4 />
       </div>
     </main>

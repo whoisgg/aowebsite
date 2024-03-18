@@ -16,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 3rem;
 }
 
 .scrollSection h3 {
@@ -23,4 +24,8 @@
   letter-spacing: var(--headlineMedium);
   font-size: var(--headlineMedium);
   text-transform: uppercase;
+}
+
+.scrollSection img {
+  width: 20vw;
 }

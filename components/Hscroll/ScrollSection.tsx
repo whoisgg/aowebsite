@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styles from "../../styles/horizontal.module.scss";
+import Image from "next/image";
 function ScrollSection() {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
@@ -44,17 +45,35 @@ function ScrollSection() {
       the animation should alway be two separated refs */}
       <div ref={triggerRef}>
         <div ref={sectionRef} className={styles.scrollSectionInner}>
-          <div className={styles.scrollSection}>
-            <h3>Section 1</h3>
+          <div className={styles.scrollSection} id="services">
+            <div>
+              <h3>Servicios</h3>
+            </div>
           </div>
           <div className={styles.scrollSection}>
-            <h3>Section 2</h3>
+            <div>
+              <h3>Estetica</h3>
+              <Image
+                src={"/images/111.jpg"}
+                height={500}
+                width={500}
+                alt="dental"
+              />
+            </div>
           </div>
           <div className={styles.scrollSection}>
-            <h3>Section 3</h3>
+            <div>
+              <h3>Endodoncia</h3>
+              <Image
+                src={"/images/18.jpg"}
+                height={500}
+                width={500}
+                alt="dental"
+              />
+            </div>
           </div>
           <div className={styles.scrollSection}>
-            <h3>Section 4</h3>
+            <h3>Odontologia General</h3>
           </div>
         </div>
       </div>
