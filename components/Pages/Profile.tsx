@@ -13,9 +13,9 @@ const Profile = () => {
       {/* Logo Image */}
       <div className="mb-8 w-full max-w-md mx-auto">
         <Image
-          src="/images/113.png"
+          src="/images/115.png"
           alt="logo"
-          width={500}
+          width={400}
           height={500}
           priority
           className="w-full h-auto md:w-auto"
@@ -23,7 +23,7 @@ const Profile = () => {
       </div>
 
       {/* Social Networks Bar */}
-      <div className="flex justify-center space-x-4 pt-5">
+      <div className="flex j</div>ustify-center space-x-4 pt-7 pb-0">
         <Link
           href="https://www.instagram.com/dra.antonietaortegamunoz/"
           passHref
@@ -36,6 +36,9 @@ const Profile = () => {
         <Link href="https://twitter.com/" passHref>
           <FaSquareXTwitter className="text-3xl cursor-pointer hover:invert" />
         </Link>
+      </div>
+      <div className="flex justify-center text-4xl font-interTight pt-5 ">
+        Dra ANtonieta ortega Muñoz
       </div>
     </div>
   );

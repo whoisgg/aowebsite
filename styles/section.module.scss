@@ -19,17 +19,45 @@
   place-items: center;
   padding-top: 10vh;
 }
+
 .textContainer {
   display: flex;
   flex-direction: column;
   align-items: flex-end; // Align text to the right
   justify-content: center; // Center content vertically
   height: 100%;
+  text-align: right;
+  margin-right: -53vw;
+}
+
+@media (max-width: 1024px) {
+  .textContainer {
+    margin-right: -37vw; /* Negative margin to position the items */
+  }
+  .largeText {
+    font-size: 7vw; /* Adjust font size for medium-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .textContainer {
+    margin-right: -15vw; /* Negative margin to position the items */
+  }
+  .largeText {
+    font-size: 10vw; /* Revert to 10vw for small-sized screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .textContainer {
+    margin-right: -30vw;
+  }
+  .largeText {
+    font-size: 8vw;
+  }
 }
 
 .textBlock {
-  font-size: 10vw;
-  text-align: right; // Align text to the right
   line-height: 1;
 }
 
