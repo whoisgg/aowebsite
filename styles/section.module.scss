@@ -1,7 +1,60 @@
-.profile {
+.profile2 {
   height: 100vh; /* Make the profile component take up full viewport height */
-  background-color: black; /* Add background color or any styling you desire */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.largeText {
+  font-size: 100px;
+}
+
+.coloredText {
+  color: rgb(0, 128, 128);
+}
+
+.profile {
+  height: 100vh;
+  display: flex;
+  position: relative;
+
+  .textBlock {
+    position: absolute;
+    font-size: calc(5vw + 10px);
+  }
+
+  // Customizing specific text blocks
+  .textBlock1 {
+    top: 33%;
+    left: 56%;
+    display: flex;
+    align-items: center;
+  }
+
+  .textBlock2 {
+    top: 42%;
+    left: 60%;
+    font-size: 6vw;
+  }
+  .textBlock3 {
+    top: 65%;
+    left: 73%;
+    font-size: 4vw;
+  }
+  .textBlock4 {
+    top: 70%;
+    left: 65%;
+    font-size: 7vw;
+  }
+  .textBlock5 {
+    top: 80%;
+    left: 40%;
+    font-size: 7vw;
+  }
+}
+
+.inlineText {
+  margin: 0 20px;
+  font-size: 3vw;
+  top: 37%; // Adds a bit of space on either side of the image
 }
