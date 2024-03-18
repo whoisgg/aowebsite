@@ -45,31 +45,22 @@ function ScrollSection() {
       the animation should alway be two separated refs */}
       <div ref={triggerRef}>
         <div ref={sectionRef} className={styles.scrollSectionInner}>
-          <div className={styles.scrollSection} id="services">
+          <div
+            className={`${styles.scrollSection} ${styles.scrollOne}`}
+            id="services"
+          >
             <div>
               <h3>Servicios</h3>
             </div>
           </div>
-          <div className={styles.scrollSection}>
+          <div className={`${styles.scrollSection} ${styles.scrollTwo}`}>
             <div>
               <h3>Estetica</h3>
-              <Image
-                src={"/images/111.jpg"}
-                height={500}
-                width={500}
-                alt="dental"
-              />
             </div>
           </div>
-          <div className={styles.scrollSection}>
+          <div className={`${styles.scrollSection} ${styles.scrollThree}`}>
             <div>
               <h3>Endodoncia</h3>
-              <Image
-                src={"/images/18.jpg"}
-                height={500}
-                width={500}
-                alt="dental"
-              />
             </div>
           </div>
           <div className={styles.scrollSection}>

@@ -5,7 +5,6 @@ import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 import Profile from "@/components/Pages/Profile";
 import Section1 from "@/components/Pages/Section1";
-import Header from "@/components/Header/Header";
 import Section2 from "@/components/Pages/Section2";
 import Section3 from "@/components/Pages/Section3";
 import Section4 from "@/components/Pages/Section4";
