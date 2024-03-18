@@ -7,10 +7,13 @@ const Profile = () => {
       <Image
         src={"/images/9.png"}
         alt="logo"
-        height={1500}
-        width={1500}
+        height={3000}
+        width={3000}
         priority
       />
+      {/* <div>
+        Especialista en sacar a RELUCIR tu MEJOR versión y recuperar tu BELLEZA
+      </div> */}
     </div>
   );
 };

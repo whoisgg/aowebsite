@@ -4,21 +4,34 @@ import styles from "../../styles/section.module.scss";
 const Section1 = () => {
   return (
     <div className={styles.profile} id="about">
-      <div>image</div>
+      <div className="font-bebasNeue">
+        {/* <div
+          className={`${styles.largeText} ${styles.textBlock} ${styles.textBlock1}`}
+        >
+          <span className={`${styles.inlineText}`}>Dra. </span>
+          <span>Antonieta Ortega </span>
+        </div> */}
 
-      <div className="grid grid-cols-2 gap-4">
-        <div>{/* Column Left */}</div>
-        <div>
-          {/* Column Right */}
-          <div className="text-5xl text">
-            <h2>Dra Antonieta Ortega</h2>
-          </div>
-          <div>
-            Especialista en sacar a RELUCIR tu MEJOR versión y recuperar tu
-            BELLEZA
-          </div>
-          <div>{/* Another div */}</div>
-        </div>
+        {/* <p
+          className={`${styles.largeText} ${styles.textBlock} ${styles.textBlock2}`}
+        >
+          Cirujano Dentista
+        </p> */}
+        <p
+          className={`${styles.largeText} ${styles.textBlock} ${styles.textBlock3}`}
+        >
+          ESpecializada en
+        </p>
+        <p
+          className={`${styles.largeText} ${styles.textBlock} ${styles.textBlock4}`}
+        >
+          Endodoncia y
+        </p>
+        <p
+          className={`${styles.largeText} ${styles.coloredText} ${styles.textBlock} ${styles.textBlock5}`}
+        >
+          Armonizacion Orofacial
+        </p>
       </div>
     </div>
   );

@@ -1,10 +1,9 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import styles from "../../styles/gallery.module.scss";
-
+import { useTransform, useScroll, motion } from "framer-motion";
 import Image from "next/image";
 import Lenis from "@studio-freight/lenis";
-import { useTransform, useScroll, motion } from "framer-motion";
 
 const images = [
   "11.jpg",
@@ -57,20 +56,19 @@ const Section2 = () => {
   }, []);
 
   return (
-    <div className={styles.profile} id="">
-      <main className={styles.main}>
-        <div className={styles.spacer}></div>
-        <div ref={gallery} className={styles.gallery}>
-          <Column images={[images[0], images[1], images[2]]} y={y} />
-          <Column images={[images[3], images[4], images[5]]} y={y2} />
-          <Column images={[images[6], images[7], images[8]]} y={y3} />
-          <Column images={[images[9], images[10], images[11]]} y={y4} />
-        </div>
-        <div className={styles.spacer}></div>
-      </main>
-    </div>
+    <main className={styles.main}>
+      <div className={styles.spacer}></div>
+      <div ref={gallery} className={styles.gallery}>
+        <Column images={[images[0], images[1], images[2]]} y={y} />
+        <Column images={[images[3], images[4], images[5]]} y={y2} />
+        <Column images={[images[6], images[7], images[8]]} y={y3} />
+        <Column images={[images[9], images[10], images[11]]} y={y4} />
+      </div>
+      <div className={styles.spacer}></div>
+    </main>
   );
 };
+
 const Column = ({ images, y }: any) => {
   return (
     <motion.div className={styles.column} style={{ y }}>
@@ -80,9 +78,8 @@ const Column = ({ images, y }: any) => {
             <Image
               src={`/images/${src}`}
               alt="image"
-              layout="responsive"
-              width={3}
-              height={4}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         );

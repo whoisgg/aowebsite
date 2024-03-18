@@ -23,7 +23,6 @@ export default function Home() {
 
   return (
     <main>
-      <Header />
       <Profile />
       <div className={styles.main}>
         <ZoomParallax />
