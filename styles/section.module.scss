@@ -1,5 +1,5 @@
 .profile2 {
-  height: 100vh; /* Make the profile component take up full viewport height */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,47 +14,33 @@
 }
 
 .profile {
-  height: 100vh;
+  height: 40vh;
+  display: grid;
+  place-items: center;
+  padding-top: 10vh;
+}
+.textContainer {
   display: flex;
-  position: relative;
-
-  .textBlock {
-    position: absolute;
-    font-size: calc(5vw + 10px);
-  }
-
-  // Customizing specific text blocks
-  .textBlock1 {
-    top: 33%;
-    left: 56%;
-    display: flex;
-    align-items: center;
-  }
-
-  .textBlock2 {
-    top: 42%;
-    left: 60%;
-    font-size: 6vw;
-  }
-  .textBlock3 {
-    top: 65%;
-    left: 73%;
-    font-size: 4vw;
-  }
-  .textBlock4 {
-    top: 70%;
-    left: 65%;
-    font-size: 7vw;
-  }
-  .textBlock5 {
-    top: 80%;
-    left: 40%;
-    font-size: 7vw;
-  }
+  flex-direction: column;
+  align-items: flex-end; // Align text to the right
+  justify-content: center; // Center content vertically
+  height: 100%;
 }
 
-.inlineText {
-  margin: 0 20px;
-  font-size: 3vw;
-  top: 37%; // Adds a bit of space on either side of the image
+.textBlock {
+  font-size: 10vw;
+  text-align: right; // Align text to the right
+  line-height: 1;
+}
+
+.textBlock1 {
+  grid-area: 1 / 1; // Positioning in the grid
+}
+
+.textBlock2 {
+  grid-area: 2 / 1;
+}
+
+.textBlock3 {
+  grid-area: 3 / 1;
 }

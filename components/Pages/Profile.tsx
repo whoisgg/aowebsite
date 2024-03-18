@@ -1,20 +1,44 @@
 import Image from "next/image";
 import styles from "../../styles/section.module.scss";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Profile = () => {
   return (
-    <div className={styles.profile}>
-      <Image
-        src={"/images/9.png"}
-        alt="logo"
-        height={3000}
-        width={3000}
-        priority
-      />
-      {/* <div>
-        Especialista en sacar a RELUCIR tu MEJOR versión y recuperar tu BELLEZA
-      </div> */}
+    <div
+      className=" h-screen flex flex-col items-center justify-center pb-5"
+      id="hero"
+    >
+      {/* Logo Image */}
+      <div className="mb-8 w-full max-w-md mx-auto">
+        <Image
+          src="/images/113.png"
+          alt="logo"
+          width={500}
+          height={500}
+          priority
+          className="w-full h-auto md:w-auto"
+        />
+      </div>
+
+      {/* Social Networks Bar */}
+      <div className="flex justify-center space-x-4 pt-5">
+        <Link
+          href="https://www.instagram.com/dra.antonietaortegamunoz/"
+          passHref
+        >
+          <FaInstagram className="text-3xl cursor-pointer hover:text-pink-600" />
+        </Link>
+        <Link href="https://wa.me/56984644659" passHref>
+          <FaWhatsapp className="text-3xl cursor-pointer hover:text-green-400" />
+        </Link>
+        <Link href="https://twitter.com/" passHref>
+          <FaSquareXTwitter className="text-3xl cursor-pointer hover:invert" />
+        </Link>
+      </div>
     </div>
   );
 };
+
 export default Profile;

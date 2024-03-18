@@ -4,31 +4,19 @@ import styles from "../../styles/section.module.scss";
 const Section1 = () => {
   return (
     <div className={styles.profile} id="about">
-      <div className="font-bebasNeue">
-        {/* <div
-          className={`${styles.largeText} ${styles.textBlock} ${styles.textBlock1}`}
-        >
-          <span className={`${styles.inlineText}`}>Dra. </span>
-          <span>Antonieta Ortega </span>
-        </div> */}
-
-        {/* <p
-          className={`${styles.largeText} ${styles.textBlock} ${styles.textBlock2}`}
-        >
-          Cirujano Dentista
-        </p> */}
+      <div className={styles.textContainer}>
         <p
-          className={`${styles.largeText} ${styles.textBlock} ${styles.textBlock3}`}
+          className={`${styles.largeText} ${styles.textBlock} ${styles.textBlock1}`}
         >
           ESpecializada en
         </p>
         <p
-          className={`${styles.largeText} ${styles.textBlock} ${styles.textBlock4}`}
+          className={`${styles.largeText} ${styles.textBlock} ${styles.textBlock2}`}
         >
           Endodoncia y
         </p>
         <p
-          className={`${styles.largeText} ${styles.coloredText} ${styles.textBlock} ${styles.textBlock5}`}
+          className={`${styles.largeText} ${styles.coloredText} ${styles.textBlock} ${styles.textBlock3}`}
         >
           Armonizacion Orofacial
         </p>
