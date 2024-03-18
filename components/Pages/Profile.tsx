@@ -11,6 +11,9 @@ const Profile = () => {
       id="hero"
     >
       {/* Logo Image */}
+      <div className="flex justify-center text-4xl font-interTight pb-10 ">
+        Dra. ANtonieta ortega Muñoz
+      </div>
       <div className="mb-8 w-full max-w-md mx-auto">
         <Image
           src="/images/115.png"
@@ -36,9 +39,6 @@ const Profile = () => {
         <Link href="https://twitter.com/" passHref>
           <FaSquareXTwitter className="text-3xl cursor-pointer hover:invert" />
         </Link>
-      </div>
-      <div className="flex justify-center text-4xl font-interTight pt-5 ">
-        Dra ANtonieta ortega Muñoz
       </div>
     </div>
   );
