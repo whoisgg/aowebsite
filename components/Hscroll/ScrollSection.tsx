@@ -3,13 +3,18 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styles from "../../styles/horizontal.module.scss";
 import Image from "next/image";
+
 function ScrollSection() {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+  }, []); // Run only once on component mount
+
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
 
-  gsap.registerPlugin(ScrollTrigger);
-
   useEffect(() => {
+    if (!sectionRef.current || !triggerRef.current) return;
+
     const pin = gsap.fromTo(
       sectionRef.current,
       {
@@ -28,13 +33,11 @@ function ScrollSection() {
         },
       }
     );
+
     return () => {
-      {
-        /* A return function for killing the animation on component unmount */
-      }
       pin.kill();
     };
-  }, []);
+  }, [sectionRef, triggerRef]);
 
   return (
     <section className={styles.scrollSectionOuter}>
@@ -42,7 +45,7 @@ function ScrollSection() {
       first jsx element in the component, you get an error on route change */}
 
       {/* The div below act just as a trigger. As the doc suggests, the trigger and 
-      the animation should alway be two separated refs */}
+      the animation should always be two separated refs */}
       <div ref={triggerRef}>
         <div ref={sectionRef} className={styles.scrollSectionInner}>
           <div
