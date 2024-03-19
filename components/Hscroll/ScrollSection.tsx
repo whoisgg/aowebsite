@@ -50,21 +50,44 @@ function ScrollSection() {
             id="services"
           >
             <div>
-              <h3>Servicios</h3>
+              <h3 className="text-5xl">Servicios</h3>
             </div>
           </div>
           <div className={`${styles.scrollSection} ${styles.scrollTwo}`}>
             <div>
               <h3>Estetica</h3>
+              <ul className="text-xl">
+                <li>Blanqueamiento</li>
+                <li>Bioestimulador colageno</li>
+                <li>Rellenos de acido hialuronico</li>
+                <li>rino modelacion</li>
+                <li>relleno de labios y menton</li>
+                <li>Skinboosters</li>
+                <li>Lipoaspiracion de papada</li>
+                <li>Lifting 7 puntos</li>
+                <li>Vitaminas</li>
+                <li>Toxina botulinica</li>
+              </ul>
             </div>
           </div>
           <div className={`${styles.scrollSection} ${styles.scrollThree}`}>
             <div>
               <h3>Endodoncia</h3>
+              <ul className="text-xl">
+                <li>Tratamiento de Conducto</li>
+              </ul>
             </div>
           </div>
           <div className={styles.scrollSection}>
-            <h3>Odontologia General</h3>
+            <div>
+              <h3>Odontologia General</h3>
+              <ul className="text-xl">
+                <li>Limpieza</li>
+                <li>Restauraciones</li>
+                <li>Blanquamibto</li>
+                <li>Plano relajacion</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
