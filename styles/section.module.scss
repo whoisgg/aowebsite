@@ -30,6 +30,15 @@
   margin-right: -53vw;
 }
 
+@media (max-width: 1800px) {
+  .textContainer {
+    margin-right: -37vw; /* Negative margin to position the items */
+  }
+  .largeText {
+    font-size: 7vw; /* Adjust font size for medium-sized screens */
+  }
+}
+
 @media (max-width: 1024px) {
   .textContainer {
     margin-right: -37vw; /* Negative margin to position the items */

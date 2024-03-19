@@ -1,5 +1,4 @@
 import Image from "next/image";
-import styles from "../../styles/section.module.scss";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import { FaSquareXTwitter } from "react-icons/fa6";
