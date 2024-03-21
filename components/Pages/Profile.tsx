@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { GrMailOption } from "react-icons/gr";
 
 const Profile = () => {
   return (
@@ -45,6 +46,12 @@ const Profile = () => {
             aria-label="twitter"
           />
         </Link>
+        <a href="mailto:antonietaortegam@gmail.com">
+          <GrMailOption
+            className="text-3xl cursor-pointer hover:text-yellow-300"
+            aria-label="email"
+          />
+        </a>
       </div>
     </div>
   );
