@@ -1,0 +1,81 @@
+/* Import the Bandeins Sans & Strange Variable font */
+// @font-face {
+//   font-family: "Bandeins Sans & Strange Variable";
+//   src: url("https://res.cloudinary.com/dldmpwpcp/raw/upload/v1566406079/BandeinsStrangeVariable_esetvq.ttf");
+// }
+
+// /* Import the Sora font from Google Fonts */
+// @import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+// /* Swipe container styling */
+.Swipe {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Slide outer and inner styling */
+.Swipe .slideOuter,
+.Swipe .slideInner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Slide container styling */
+.Swipe .slideContainer {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  padding: 0 3rem;
+  margin-top: 10vh;
+  height: 80vh;
+}
+
+/* Slide heading styling */
+.Swipe .slideHeading {
+  display: block;
+  text-align: left;
+  // font-family: "Bandeins Sans & Strange Variable", "Sora", sans-serif;
+  font-size: clamp(5rem, 15vw, 15rem);
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  color: #f2f1fc;
+  grid-area: 1 / 1 / 4 / 10;
+  align-self: end;
+  z-index: 50;
+}
+
+/* Slide image container styling */
+.Swipe .slideImgCont {
+  margin-top: 0;
+  grid-area: 3 / 2 / 8 / 7;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Overlay image container styling */
+.Swipe .overlayImgCont {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  grid-area: 5 / 4 / 10 / 11;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}

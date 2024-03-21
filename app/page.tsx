@@ -30,8 +30,9 @@ export default function Home() {
         <Section1 />
         <Section2 />
         <ScrollSection />
-        <Section3 />
-        <Section4 />
+        <Profile />
+        {/* <Section3 />
+        <Section4 /> */}
       </div>
     </main>
   );

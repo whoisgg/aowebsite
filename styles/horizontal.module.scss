@@ -10,25 +10,24 @@
   position: relative;
 }
 
-.scrollSection {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-}
+// .scrollSection {
+//   height: 100vh;
+//   width: 100vw;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
-.scrollSection h3 {
-  color: var(--primaryTextColor);
-  letter-spacing: var(--headlineMedium);
-  font-size: var(--headlineMedium);
-  text-transform: uppercase;
-}
+// .scrollSection h3 {
+//   color: var(--primaryTextColor);
+//   letter-spacing: var(--headlineMedium);
+//   font-size: var(--headlineMedium);
+//   text-transform: uppercase;
+// }
 
-.scrollSection img {
-  width: 20vw;
-}
+// .scrollSection img {
+//   width: 20vw;
+// }
 
 .scrollOne {
   background-image: url("/images/119.jpg");
